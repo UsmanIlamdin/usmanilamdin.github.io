@@ -139,44 +139,79 @@
           </p>
           <h2>What Are Sorting Algorithms?</h2>
           <p>
-          Sorting algorithms are algorithms that organize items in a sequence according to a specific condition, for example, in ascending order. Sorting algorithms are usually evaluated by how well they organize sequences of integers, but in the real world, sorting isn’t limited to just numbers. Almost anywhere you look, from simple websites to complex web applications to intricate business systems, sorting algorithms are doing the work in organizing the underlying data.
+          Sorting algorithms are algorithms that organize items in a sequence according to a 
+          specific condition, for example, in ascending order. Sorting algorithms are usually 
+          evaluated by how well they organize sequences of integers, but in the real world, 
+          sorting isn’t limited to just numbers. Almost anywhere you look, from simple 
+          websites to complex web applications to intricate business systems, sorting algorithms 
+          are doing the work in organizing the underlying data.
           </p>
           <p>
-          What makes sorting a cornerstone of modern technology? The answer: search. In a dataset that isn’t ordered, your best option when searching (and it’s not a very good one) is to consider each item in the dataset and see if it’s what you need. The more elements you examine, the longer it takes to search an unordered data structure.
+          What makes sorting a cornerstone of modern technology? The answer: search. In a 
+          dataset that isn’t ordered, your best option when searching (and it’s not a very 
+          good one) is to consider each item in the dataset and see if it’s what you need. 
+          The more elements you examine, the longer it takes to search an unordered data 
+          structure.
           </p>
           <p>
-          Imagine how slow searching for a keyword on Google would be if it meant Google had to look through every web page in existence. And Google is far from the only place where we rely on search: Other examples include your browsing history, the transactions in your banking interface and the songs you recently listened to online.
+          Imagine how slow searching for a keyword on Google would be if it meant Google 
+          had to look through every web page in existence. And Google is far from the only 
+          place where we rely on search: Other examples include your browsing history, 
+          the transactions in your banking interface and the songs you recently listened 
+          to online.
           </p>
           <p>
-          Sorting the data first is what makes it possible to search for everything quickly. If you organize the data in a way that helps you find the right element faster, you significantly reduce the amount of time needed to produce accurate search results, especially over vast datasets.
+          Sorting the data first is what makes it possible to search for everything 
+          quickly. If you organize the data in a way that helps you find the right element 
+          faster, you significantly reduce the amount of time needed to produce accurate 
+          search results, especially over vast datasets.
           </p>
           <h2>How Sorting Algorithms Work</h2>
           <p>
-          If you’re given an unordered set of elements — for example, a vector if you are programming in C —  a sorting algorithm generally moves the elements either within the vector or into a new vector in a specific pattern until contents are fully sorted.
+          If you’re given an unordered set of elements — for example, a vector if you are 
+          programming in C —  a sorting algorithm generally moves the elements either 
+          within the vector or into a new vector in a specific pattern until contents 
+          are fully sorted.
           </p>
           <p>
-          Some algorithms compare pairs of elements to decide which item goes first — these are called comparison algorithms. Others attain the right order without comparing elements, relying instead on hashing functions. Sorting algorithms aren’t just for numbers; you can usually extend them to work on any data structure and even provide custom functions to present the desired ordering.
+          Some algorithms compare pairs of elements to decide which item goes first — these 
+          are called comparison algorithms. Others attain the right order without comparing 
+          elements, relying instead on hashing functions. Sorting algorithms aren’t just for 
+          numbers; you can usually extend them to work on any data structure and even provide 
+          custom functions to present the desired ordering.
           </p>
           <p>
-          You can objectively evaluate a sorting algorithm on three criteria: time complexity, memory usage and stability.
+          You can objectively evaluate a sorting algorithm on three criteria: time complexity,
+           memory usage and stability.
           </p>
           <h3>Time Complexity in Sorting Algorithms</h3>
           <p>
-          Time complexity is an abstract way to show how long a sorting algorithm would take to sort a vector of length n. The best algorithms that make comparisons between elements usually have a complexity of O(n log n). This complexity means that the algorithm’s run time increases slightly faster than the number of items in the vector.
+          Time complexity is an abstract way to show how long a sorting algorithm would take 
+          to sort a vector of length n. The best algorithms that make comparisons between 
+          elements usually have a complexity of O(n log n). This complexity means that the 
+          algorithm’s run time increases slightly faster than the number of items in the vector.
           </p>
           <p>
-          As a programmer, you generally want the sorting to finish quickly on large datasets. Thus we tend to find sorting algorithms with short run times in real-world programs.
+          As a programmer, you generally want the sorting to finish quickly on large datasets. 
+          Thus we tend to find sorting algorithms with short run times in real-world programs.
           </p>
           <h3>Question: Are O(n log n)-complex algorithms faster than O(n)?</h3>
           <p>
-          No, although there are no sorting algorithms with O(n) complexity in the typical case. Here’s some quick math to explain why O(n log n) isn’t faster than O(n):
-          n is the number of elements you are sorting, a positive integer. The logarithm of a positive integer is always greater than one. Therefore log n > 1 for all n > 1, making n * log n > n for all n > 1.
+          No, although there are no sorting algorithms with O(n) complexity in the typical case. 
+          Here’s some quick math to explain why O(n log n) isn’t faster than O(n):
+          n is the number of elements you are sorting, a positive integer. The logarithm of a 
+          positive integer is always greater than one. Therefore log n > 1 for all n > 1, 
+          making n * log n > n for all n > 1.
           </p>
-          <p>By the same logic, algorithms with O(log n) complexity are faster than those with complexity O(n).
+          <p>By the same logic, algorithms with O(log n) complexity are faster than those with 
+          complexity O(n).
           </p>
           <h3>Memory Usage in Sorting Algorithms</h3>
           <p>
-          Given that the vector you’re sorting has n elements, some algorithms won’t need any additional memory beyond what’s required to store the n elements themselves. These are called in-place sort algorithms. In-place sorting is the best possible case for sorting algorithms from a memory usage standpoint. A few examples of in-place algorithms:
+          Given that the vector you’re sorting has n elements, some algorithms won’t need any 
+          additional memory beyond what’s required to store the n elements themselves. These 
+          are called in-place sort algorithms. In-place sorting is the best possible case for 
+          sorting algorithms from a memory usage standpoint. A few examples of in-place algorithms:
           </p>
           <ul>
             <li>Heapsort</li>
@@ -185,12 +220,44 @@
             <li>ascertion sort</li>
             <li>bubble sort</li>
           </ul>
-          <p>But many other algorithms require more memory than in-place algorithms. For example, those that need at least as much additional memory as the vector itself are said to have memory requirements of n.
+          <p>But many other algorithms require more memory than in-place algorithms. For example, 
+          those that need at least as much additional memory as the vector itself are said to have
+           memory requirements of n.
           </p>
 
-         <p>It’s essential to be aware of your chosen algorithm’s memory usage. A memory-intensive sorting algorithm might not have enough RAM to run on a tiny IoT device, especially if you are sorting large datasets.
+         <p>It’s essential to be aware of your chosen algorithm’s memory usage. A memory-intensive 
+         sorting algorithm might not have enough RAM to run on a tiny IoT device, especially if 
+         you are sorting large datasets.
          </p>
-         
+         <h3>Stable and Unstable Sorting Algorithms</h3>
+         <p>
+         An algorithm is stable when, upon finding two elements that are equal for sorting, the 
+         algorithm preserves the original order of the items. An algorithm is unstable when 
+         there is no guarantee that the equal elements will end up in the original order. 
+         In most cases, stability isn’t as important as complexity or memory usage. However, 
+         if you are building, say, a queueing system, you might need to use a stable algorithm 
+         to guarantee first-in-first-out ordering on similar items in the queue.
+         </p>
+         <h3>Which is the Best Algorithm for Sorting?</h3>
+         <p>
+         There is no single best choice for all sorting tasks. However,, the answer very frequently 
+         lies in the algorithm that’s already available to you in your programming language’s 
+         standard library.
+         </p>
+
+        <p>While it can be useful to know the differences between the many sorting algorithms 
+        out there, in most cases, you won’t need to implement your own algorithm for sorting 
+        in a production application. The standard library of the programming language you’re 
+        using likely has one, and it’s most probably implemented in a high-performance and 
+        robust way.
+        </p>
+
+        <p>For example, in C, the default algorithm used is introsort, a combination of heapsort, 
+        quicksort, and insertion sort. Introsort is an in-place algorithm and uses very little 
+        additional memory. Introsort performs at the best possible level, O(n log n), so there 
+        is rarely a reason not to use the default sorting algorithm from the C standard library.
+        </p>
+
     </article>
       </div>
     </section>
