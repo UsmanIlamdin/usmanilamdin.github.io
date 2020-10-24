@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usman IlamDin || Projects</title>
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/logo.svg" class="nav-logo" alt="" />
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="blog.html">blog</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button id="close-btn" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+        <ul class="social-icons">
+          <!-- single item -->
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://www.linkedin.com/in/usmanilamdin" class="social-icon">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <header class="projects-hero">
+      <!-- section title -->
+      <div class="section-title">
+        <h1>Install OpenCV and other dependencies</h1>
+      </div>
+      <!--end of section title -->
+    </header>
+    <h4>
+            by usmanilamdin
+    </h4>
+    <!-- about -->
+    <section class="section about">
+      <div class="section-center about-center">
+        <!-- about img -->
+        <article class="learnpython">
+          <img
+            src="./images/benefit_of_ai.jpg"
+            class="hero-photo"
+            alt="about img"
+            alt="learnpython"
+            
+          />
+        </article>
+        
+
+
+
+
+
+
+
+
+    
+        <!-- blog -->
+        <article class="about-info">
+       
+        <h2>Main Software stack setup</h2>
+        <h4>Recomended to install python packages compiled below</h4>
+          <input type="text" value="pip3 install --upgrade pip">
+          
+          <input type="text" value="pip3 install wheel">
+          
+          <input type="text" value="pip3 install numpy">
+
+          <input type="text" value="pip3 install matplotlib">
+
+          <input type="text" value="pip3 install cython">
+          
+          <input type="text" value="pip3 install joblib">
+          
+          <h4>Install OpenCV with CUDA ON (python package)</h4>
+
+          <input type="text" value="git clone https://github.com/mdegans/nano_build_opencv.git">
+
+          <input type="text" value="cd nano_build_opencv">
+
+          <input type="text" value="./build_opencv.sh">
+
+          <h5>update the global lib path</h5>
+
+          <input type="text" value="ln -s /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so cv2.so">
+
+          <h4>Pre - setup ( dependency corrections Cmake )</h4>
+           
+          <input type="text" value="cmake --version">
+          <input type="text" value="sudo apt remove --purge cmake">
+          <input type="text" value="wget https://gitlab.kitware.com/cmake/cmake/-/archive/v3.18.2/cmake-v3.18.2.tar.bz2">
+          <input type="text" value="tar xvf cmake-v3.18.2.tar.bz2">
+          <input type="text" value="sudo apt install libssl-dev libcurl4-openssl-dev qt4-qmake">
+          <input type="text" value="sudo apt autoremove">
+          <input type="text" value="cd cmake-v3.18.2/">
+          <input type="text" value="./bootstrap --system-curl">
+          <input type="text" value="make -j3">
+          <input type="text" value="which cmake">
+          <input type="text" value="cmake --version">
+
+          <h4>Open3D-for-Jetson Build (CUDA Reconstruction pipeline)</h4>
+          <input type="text" value="git clone --recursive https://github.com/devshank3/Open3D-for-Jetson.git">
+          <input type="text" value="cd Open3D_for_Jetson/">
+          <input type="text" value="cd util/scripts/">
+          <input type="text" value="./install-deps-ubuntu.sh">
+          <input type="text" value="cd ..">
+          <input type="text" value="mkdir build">
+          <input type="text" value="cd build">
+          <input type="text" value="cmake ..">
+          <input type="text" value="make -j3">
+          
+
+          <h4>Librealsense Install by Jetsonhacks (python package)</h4>
+          <input type="text" value="git clone https://github.com/JetsonHacksNano/installLibrealsense.git">
+          <input type="text" value="cd installLibrealsense">
+          <h5>edit buildLibrealsense.sh with</h5>
+          <input type="text" value="nano  buildLibrealsense.sh">
+          <p>
+            line 6  # Jetson Nano; L4T 32.2.3   to    # Jetson Nano; L4T 32.4.3
+          </p>
+          <p>
+            line 9  LIBREALSENSE_VERSION=v2.31.0   to   LIBREALSENSE_VERSION=v2.38.1
+          </p>
+          <p>
+            line 11 NVCC_PATH=/usr/local/cuda-10.0/bin/nvcc  to  NVCC_PATH=/usr/local/cuda-10.2/bin/nvcc
+          </p>
+          <h5>Finally build the Librealsense</h5>
+          <input type="text" value="./buildLibrealsense.sh">
+          <h5>update the global lib path </h5>
+          <input type="text" value="ln -s /usr/lib/python3/dist-packages/pyrealsense2/python-3.6/pyrealsense2.cpython-36m-aarch64-linux-gnu.so pyrealsense2.so">
+
+          <h4>test all dependencies install properlly </h4>
+          python3
+          <input type="text" value="import Open3D" >
+          <input type="text" value="import cv2" >
+          <input type="text" value="import pyrealsense2">
+
+
+
+
+
+        
+
+        
+    </article>
+      </div>
+    </section>
+    <!-- end of about -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="social-icons">
+        <!-- single item -->
+        <li>
+            <a href="https://www.linkedin.com/in/usmanilamdin" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/UsmanIlamdin" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:usmanilamdin65@gmail.com?" class="social-icon">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+      </ul>
+
+      <p>&copy; <span id="date"></span> Usman IlamDin. All rights reserved.</p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
