@@ -1,1 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usman IlamDin || Projects</title>
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
+  <body>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/logo.svg" class="nav-logo" alt="" />
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="blog.html">blog</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button id="close-btn" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+        <ul class="social-icons">
+          <!-- single item -->
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://www.linkedin.com/in/usmanilamdin" class="social-icon">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <header class="projects-hero">
+      <!-- section title -->
+      <div class="section-title">
+        <h1>AWS PHP Guide for Developers</h1>
+      </div>
+      <!--end of section title -->
+    </header>
+    <h4>
+            by usmanilamdin
+    </h4>
+    <!-- about -->
+    <section class="section about">
+      <div class="section-center about-center">
+        <!-- about img -->
+        <article class="learnpython">
+          <img
+            src="./images/aws-101-php.jpeg"
+            class="hero-photo"
+            alt="about img"
+            alt="aws 101 for php developer"
+            
+          />
+        </article>
+        
+        <!-- blog -->
+        <article class="about-info">
+          <p>
+         We hosted an AWS 101 webinar earlier this month, during which we did a live walk-through of how simple it is to get your PHP applications up and running on the enterprise cloud platform AWS.
+          </p>
+          <p>
+         This article will walk you through the process of getting started with AWS using a Zend PHP server. But first, let's address a frequently asked question.
+          </p>
+          <h2>Does AWS Support PHP?</h2>
+          <p>
+          Yes, there are numerous ways to deploy PHP applications on AWS. These options range from using a minimal OS image to spin up an instance and then installing the LAMP stack on top of it to using images that come pre-installed with everything needed to run a web application.
+          </p>
+          <h2>Easy Steps to Host a PHP Website on AWS</h2>
+          <p>
+         Zend Server AWS machine images (AMI), which come pre-installed with Zend Server, are one of the quickest ways to get your PHP app into an AWS machine (but without MySQL server). If your application requires a MySQL server (which many PHP applications do), we recommend AWS RDS, which offers MySQL as a service.
+          </p>
+          <p>
+          Aside from the standard PHP and Apache stack, Zend Server adds value with the following components:
+          </p>
+           <ul>
+            <li>Z:Ray: allows displaying all information about requests processed by PHP in real time</li>
+            <li>Deployment: automates deployment of PHP applications</li>
+            <li>Monitoring: centralized interface to PHP events</li>
+            <li>Data cache: PHP extension that allows caching data in memory or on disk</li>
+            <li>Page cache: cache full page that was generated by PHP</li>
+            <li>Job queue: background execution of requests to any URL</li>
+            <li>Session clustering: allows sharing of PHP sessions between cluster nodes</li>
+              </ul>
+          <ul>
+        <p>Zend Server images on AWS Marketplace provide a choice of the following options:</p>
+          <ul>
+            <li>Operating system: RHEL7 or Ubuntu 14.04 (CentOS is on our roadmap)</li>
+            <li>PHP versions: 5.5 or 5.6 (there are a few images with PHP 5.3/5.4 as an LTS version and PHP 7 will be supported soon)</li>
+            <li>Zend Server editions: developer, professional, and enterprise</li>
+          </ul>
+            <h2>Zend Server for AWS PHP + MySQL</h2>
+            <p>Ready to get started with AWS PHP + MySQL?</p>
+         <p>
+         As a follow-on to the webinar, we have pulled together this step-by-step guide covering how to start a simple instance of Zend Server on AWS, add RDS MySQL service and connect to it, and launch WordPress using Zend Server deployment.
+         </p>
+    
+         <h3>Step 0 - AWS Vocabulary and Security Basics</h3>
+         <p>
+           Let’s start with a simple vocabulary of common terms that are used when discussing AWS:
+         </p>
+         <ul>
+            <li>AWS (Amazon Web Services)<li>
+            <li>EC2 (Elastic Compute Cloud): an AWS service that provides computing resources<li>
+            <li>AMI (Amazon Machine Image): a filesystem image with some metadata like type of OS in image and type of virtualization to use when starting new server<li>
+            <li>Instance: a Virtual Machine running on EC2 using some AMI<li>
+            <li>Instance type: a combination of CPU, memory, storage, and networking capacity<li>
+            <li>RDS (Relational Database Service): an AWS service that provides many relational databases (supports, but not limited to, MySQL)<li>
+         </ul>
+          <h3>Step 1 - Launching Zend Server on AWS</h3>
+        <p>
+There are two ways to launch Zend Server on AWS. First is to use AWS Marketplace website (option A) and launch Zend Server from there. Second is to use Marketplace inside AWS Console (option B). We will cover both ways here.
+            </p>
+            <h4>Option A: Launch Zend Server using AWS Marketplace website</h4>
+        <ol>
+          <li>Open AWS Marketplace website</li>
+          <li>Sign in or create AWS account by clicking relevant link on top of page<li>
+          <li>Type ‘Zend Server’ in the search bar and press Enter<li>
+          <li>In the search result locate Zend Server with relevant PHP version, edition, and operating system. For this guide please select 'PHP 5.6 - Zend Server Developer Edition (Ubuntu)'.<li>
+          <li>On the product page click on "Continue" button located on the right<li>
+          <ul>
+                <li>Configure and customize the launch settings of Zend Server instance.<li>
+                <li>Version: version of Zend Server AMI to use. It’s recommended to always use latest version<li>
+                <li>Region: which region Zend Server instance should be started<li>
+                <li>Instance type:  how much CPU/memory/Storage you want for your instance<li>
+                <li>VPC settings: which VPC and subnet instance is started<li>
+                <li>Security group: security group for instance, you can select existing security group or let AWS create new security group with default rules for Zend Server (recommended)<li>
+                <li>Key pair: which SSH key pair should be installed on this instance<li>
+            </ul
+         <li> Review the launch settings and click on "Accept Software Terms & Launch with 1-Click" button, After the first launch this button will be named "Launch with 1-Click".
+         <li>Login to AWS Console to see the new instance and get its’ details
+            </ol>
+          <h4>Option B: Launch Zend Server using AWS Console</h4>
+          <ol>
+             <li>Login to AWS Console</li>
+             <li>Open EC2 Console</li>
+             <li>On dashboard click on "Launch Instance"button</li>
+             <li>In the wizard presented select AWS Marketplace tab on the left</li>
+             <li>Enter 'Zend Server' in the search bar</li>
+             <li>Select relevant Zend Server product with relevant PHP version, edition, and operating system and click Continue button in product summary that is shown. For this guide please select 'PHP 5.6 - Zend Server Developer Edition (Ubuntu)'.</li>
+             <li>Select instance type</li>
+             <li>On steps 3, 4, 5 various instance settings can be configured. For this guide, skip them by clicking “5. Tag Instance” link on top.</li>
+             <li>Enter friendly name for your instance that will be used to identify it and click on "Review and Launch" button</li>
+             <li>Review new instance settings and click "Launch"</li>
+             <li>Either select an existing key pair (and acknowledge you have access to it) or create a new one and click "Launch Instances"</li>
+             <li>Wait while the instance is created and then click on "View Instances" button at the bottom of a page Launch Status</li>
+          </ol>
+          <h3>Bootstrap Zend Server to get Zend Server ready for work</h3>
+          <p>
+          After completing either option A or B, you must prepare Zend Server for use. We must bootstrap it using a simple wizard. To accomplish this, we launch the Zend Server UI, which is accessible via a web browser on the instance's port 10081.
+          </p>
+          <p>
+           We must determine the instance's public DNS (which we will use in this guide) or public IP address. To access the Zend Server UI, we'll also need the instance ID. The Zend Server UI is protected by default, so you must enter the instance ID as login and password, but once you bootstrap Zend Server and set the admin password, you will not have to use it again.
+          </p>
+          <p>
+            Follow these steps to find “Public DNS” and “Instance ID” of your instance:
+          </p>
+          <ol>
+            <li>Open AWS Console</li>
+            <li>Enter EC2 Console</li>
+            <li>In the menu on the left click on “Instances” link</li>
+            <li>Locate your instance in the list of instances and click on it</li>
+            <li>On the bottom pane you will see information about the instance shown in 2 columns</li>
+            <ul>
+              <li>“Public DNS” field is on top of right column</li>
+              <li>“Instance ID” field is on top of left column</li>
+            </ul>
+          </ol>
+          <p>
+          Now that we have the instance's public DNS name, we can open a browser and enter the following address to access the Zend Server UI: www.Public DNS>:10081/
+          </p>
+          <p>
+          When you first launch Zend Server UI, you will be prompted to authenticate. Enter the "Instance ID" you discovered earlier as both your login and password.
+          </p>
+          <p>
+          You will then be presented with a wizard that will walk you through the process of installing Zend Server in a few simple steps. After completing the wizard and successfully bootstrapping, your Zend Server is fully operational.
+          </p>
+          <p>
+          It should be noted that the bootstrap process can be fully automated by providing user data to the instance.
+          </p>
+          <h2> To be Continue ... </h2>
+    </article>
+      </div>
+    </section>
+    <!-- end of about -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="social-icons">
+        <!-- single item -->
+        <li>
+            <a href="https://www.linkedin.com/in/usmanilamdin" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/UsmanIlamdin" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:usmanilamdin65@gmail.com?" class="social-icon">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+      </ul>
+
+      <p>&copy; <span id="date"></span> Usman IlamDin. All rights reserved.</p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
